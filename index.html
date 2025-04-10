@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <script defer src="./script.js"></script>
 
     <title>Frontend Mentor | News homepage</title>
     <link rel="stylesheet" href="style.css" />
@@ -18,10 +19,10 @@
   <body>
     <main>
       <div class="container">
-        <div class="header">
+        <header class="header">
           <div class="header-body">
             <img src="/assets/images/logo.svg" alt="Logo" />
-            <nav>
+            <nav class="nav-ul">
               <ul class="list">
                 <li class="list-item"><a href="./index.html">Home</a></li>
                 <li class="list-item"><a href="#new">New</a></li>
@@ -30,20 +31,18 @@
                 <li class="list-item"><a href="#categories">Categories</a></li>
               </ul>
             </nav>
+          </div>
+
+          <div class="aside">
             <img
-              class="hamburger-menu hidden"
+              class="hamburger-menu hamburger-menu-open"
               src="./assets/images/icon-menu.svg"
               alt="icon-menu"
             />
-            <img
-              class="hamburger-menu hidden2"
-              src="./assets/images/icon-menu-close.svg"
-              alt="icon-close"
-            />
           </div>
-        </div>
+        </header>
 
-        <section>
+        <section id="section-1">
           <div class="grid-container grid">
             <div class="grid--1">
               <div class="img">
@@ -158,5 +157,31 @@
         </article>
       </div>
     </main>
+    <menu class="aside-sidebar">
+      <div class="sidebar">
+        <div class="aside">
+          <div class="hamburger-image">
+            <img
+              class="hamburger-menu hamburger-menu-close"
+              src="./assets/images/icon-menu-close.svg"
+              alt="icon-close"
+            />
+          </div>
+        </div>
+        <nav class="nav-sidebar">
+          <ul class="list list-sidebar">
+            <li class="list-item list-menu"><a href="./index.html">Home</a></li>
+            <li class="list-item list-menu"><a href="#new">New</a></li>
+            <li class="list-item list-menu"><a href="#popular">Popular</a></li>
+            <li class="list-item list-menu">
+              <a href="#trending">Trending</a>
+            </li>
+            <li class="list-item list-menu">
+              <a href="#categories">Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </menu>
   </body>
 </html>
