@@ -37,7 +37,6 @@ body {
 }
 
 .header {
-  background-color: var(--Grayish-blue2);
   padding: 2rem;
 }
 
@@ -79,7 +78,11 @@ body {
 }
 
 .grid-container {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
+}
+
+.mobile-image {
+  display: none;
 }
 
 .grid {
@@ -287,7 +290,7 @@ body {
   }
 }
 
-/* // 650px */
+/* // 650px - Mobile view*/
 @media (max-width: 40.625em) {
   html {
     font-size: 50%;
@@ -302,10 +305,19 @@ body {
       "grid--4";
   }
 
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--Grayish-blue2);
   }
 
   .nav-ul {
